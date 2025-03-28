@@ -1,0 +1,69 @@
+/* 响应式布局样式 */
+@media screen and (max-width: 768px) {
+    .header-logo-ar {
+        padding: 10px;
+    }
+    
+    .logo-text {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+    
+    .logo img {
+        width: 80px;
+        height: auto;
+    }
+    
+    .header-menu-ar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .header-menu-ar ul li {
+        width: 33.33%;
+        text-align: center;
+    }
+    
+    .container-first {
+        padding: 10px;
+    }
+    
+    .container-content {
+        padding: 15px;
+    }
+    
+    .publications-list p,
+    .activities-list p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .member-teacher-info-ar {
+        padding: 10px;
+    }
+
+    .member-content-left-pic img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* 更小屏幕的适配 */
+@media screen and (max-width: 480px) {
+    .header-menu-ar ul li {
+        width: 50%;
+    }
+    
+    .logo-big-title {
+        font-size: 20px !important;
+    }
+    
+    .logo-small-title {
+        font-size: 12px;
+    }
+
+    .container-title-text {
+        font-size: 18px;
+    }
+}

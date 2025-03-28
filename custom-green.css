@@ -1,0 +1,38 @@
+/* 主题色调覆盖 */
+.header-menu {
+    background-color: #2E8B57;  /* 海洋绿 */
+}
+
+.header-menu-ar ul li a:hover {
+    background-color: #3CB371;  /* 中等海洋绿 */
+}
+
+.header-menu-ar-active {
+    background-color: #3CB371 !important;
+}
+
+.container-title {
+    border-left: none;  /* 移除左侧边框 */
+    padding-left: 0;    /* 移除左侧内边距 */
+}
+
+.container-title-text {
+    color: #1B5E20;
+}
+
+.teacher-name-text a {
+    color: #2E8B57;
+}
+
+.teacher-name-text a:hover {
+    color: #3CB371;
+}
+
+/* 链接颜色 */
+a {
+    color: #2E8B57;
+}
+
+a:hover {
+    color: #3CB371;
+}
