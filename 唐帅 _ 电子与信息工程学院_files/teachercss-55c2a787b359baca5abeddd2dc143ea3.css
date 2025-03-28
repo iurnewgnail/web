@@ -1,0 +1,56 @@
+.block-region-right{
+  padding:40px;
+  background:#FFF;
+}
+.field.field-category.field-type-entity-reference.field-label-hidden.field-items, .field.field-field-email.field-type-email.field-label-hidden.field-item, .field.field-address.field-type-string.field-label-inline {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.block-region-right .field-type-text-with-summary {
+  padding-left:20px;
+  padding-top:20px;
+}
+.block-region-right .field-type-text-with-summary h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 18px;
+    color: #009999;
+    margin-top: 50px;
+    padding-bottom:10px;
+    border-bottom:1px solid  #ECECEC;
+    position:relative;
+}
+.block-region-right .field-type-text-with-summary h3:after{
+  content:"";
+  width:50px;
+  height:2px;
+  background-color:#009999;
+  position:absolute;
+  left:0;
+  bottom:-1px;
+}
+.facultyhead {
+    padding: 20px;
+    min-height: 130px;
+}
+.facultyimg{
+ text-align:center;
+ padding:20px;
+}
+@media (min-width:992px){
+.facultyimg {
+    position: absolute;
+    width: 150px;
+    right: 0;
+    top: -80px;
+    padding:0;
+}
+.article-title{
+ text-align:left;
+  padding-left:10px;
+}
+.facultyinfo p{
+  font-size:16px;
+}
+}

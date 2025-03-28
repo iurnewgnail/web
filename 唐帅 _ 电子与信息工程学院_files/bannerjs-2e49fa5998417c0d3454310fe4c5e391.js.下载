@@ -1,0 +1,10 @@
+	(function ($) {
+	  $(document).ready(function () {
+	    console.log($(".sidebar-menu-2-4 h2.title").text().replace(/[\r\n]/g,"").replace(/[ ]/g,""));
+	    console.log($(".main-menu-1-1 .active-submenu .is-active").text());
+	 if($(".sidebar-menu-2-4 li.menu-item.expanded.active.open .menu-toggle a").text().replace(/[ ]/g,"")=='党建工作'){
+			    $('.banner').addClass("bannerdangj"); };
+
+	  });
+	}(jQuery));
+	

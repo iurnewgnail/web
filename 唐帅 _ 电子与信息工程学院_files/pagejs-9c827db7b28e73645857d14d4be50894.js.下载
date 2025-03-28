@@ -1,0 +1,37 @@
+(function ($) {
+  $(document).ready(function () {
+    $.each($('.js-language-switch .dropdown-menu a'), function () {
+      if (!$(this).hasClass('is-active')) {
+        var lang = this;
+        if($(lang).html()=='简体中文'){ var language = '中文';} else { var language = 'EN'};
+        console.log(language); 
+        $("#language-switch").removeAttr('data-toggle');
+        $("#language-switch").attr('href', $(lang).attr('href'));
+        $("#language-switch .current-language").remove();
+        $("#language-switch i").text(language);
+        $("#language-switch .caret").remove();
+      }
+    });
+  });
+}(jQuery));
+
+jQuery(window).scroll(function() {
+  if (jQuery(window).width() >= 768){
+    if (jQuery(document).scrollTop() > 100) {
+        jQuery('#header').addClass('fixed-top');
+        jQuery('body').addClass('stickyhead');
+    } else {
+        if (jQuery('#header').hasClass('fixed-top')) {
+        jQuery('#header').removeClass('fixed-top'); }
+        if (jQuery('body').hasClass('stickyhead')) {
+        jQuery('body').removeClass('stickyhead'); }
+    }
+  }
+});
+jQuery(function() {
+  jQuery(".contentabout dl:first dd").show(300);
+  jQuery(".contentabout dt").click(function () {
+    jQuery(this).toggleClass("active").siblings(".contentabout dd").slideToggle(300)
+  })
+});
+

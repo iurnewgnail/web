@@ -1,0 +1,36 @@
+.it-big-red {
+  color: #6a2575;
+}
+a:hover {
+  color: #9781a8;
+}
+a:active {
+  color: #9781a8;
+}
+.header-menu {
+  background-color: #6a2575;
+}
+.header-menu-ar ul li a:hover {
+  background-color: #9781a8;
+}
+.header-menu-ar-active {
+  background-color: #9781a8;
+}
+.container-title-text {
+  color: #6a2575;
+}
+.team-list-ar li a:hover {
+  color: #9781a8;
+}
+.footer-content-new-left ul li a:hover {
+  color: #9781a8;
+}
+.member-teacher-list-ar li a {
+  color: #1C87EA;
+}
+.member-teacher-list-ar li a:hover {
+  color: #1C87EA;
+}
+.member-detail-info a {
+  color: #1C87EA;
+}

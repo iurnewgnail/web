@@ -1,0 +1,39 @@
+/**
+ * Created by dadi on 2018/9/21.
+ */
+
+(function ($) {
+  Drupal.behaviors.ccmsArticleStatistics = {
+    first: true,
+    attach: function (context, settings) {
+      var self = this
+      if (!this.first) return false;
+      var url = settings.statApi;
+      var dostat = settings.statistics;
+      var title = settings.title;
+      var display = settings.display;
+      if (dostat) {
+        // for page statistics
+        var jqxhr = $.ajax({
+          url: url,
+          type: "GET",
+          data: {
+            path: location.href
+          }
+        })
+        jqxhr.done(function (data) {
+          if (data.status && display) {
+            var num = $("<span></span>");
+            num.html(title + (title ? "：" : "") + data.count);
+            $('.article-header').children('.article-submit').append(num);
+          }
+          // TODO
+        })
+        jqxhr.fail(function () {
+          //console.log('Statistic Error...')
+        })
+      }
+      this.first = false;
+    },
+  };
+})(jQuery);

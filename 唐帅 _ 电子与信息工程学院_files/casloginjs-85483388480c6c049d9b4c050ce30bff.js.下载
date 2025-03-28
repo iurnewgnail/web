@@ -1,0 +1,3 @@
+jQuery(document).ready(function($){
+$(".cas-login-actions a").attr("href","/seit-live/caslogin");
+});

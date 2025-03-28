@@ -1,0 +1,26 @@
+.sidebar-menu-2-4 .nav-menu .menu-item.active:not(.expanded) a {
+    background:none;
+    color: #09523f;
+}
+.sidebar-menu-2-4 .nav-menu .expanded .level-menu .menu-item a {
+    font-size: 14px;
+    background:none;
+    color: #09523f;
+}
+.sidebar-menu-2-4 .nav-menu>.menu-item>a {
+    font-size: 15px;
+    padding-left: 20px;
+}
+.sidebar-menu-2-4 .nav-menu>.menu-item>a:after,.sidebar-menu-2-4 .nav-menu>.menu-item>.menu-toggle a:after{
+  display:none;
+}
+.sidebar-menu-2-4 .nav-menu>.menu-item>.menu-toggle {
+    padding-left: 20px;
+}
+.sidebar-menu-2-4 .nav-menu>.menu-item .level-menu.in {
+    padding-left: 0px;
+}
+.sidebar-menu-2-4 li.menu-item.expanded.active .active-submenu{
+    display:block;
+    height: initial !important;
+}
